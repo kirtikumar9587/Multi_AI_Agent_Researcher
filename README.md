@@ -70,7 +70,7 @@ create env -- create tool -- create agent -- create pipeline -- run and test
 | Technology | Purpose |
 |-----------|---------|
 | **LangChain** | Multi-agent orchestration and chain management |
-| **OpenAI GPT-4o-mini** | Language model for agents and chains |
+| **gemini-2.5-flash** | Language model for agents and chains |
 | **Streamlit** | Interactive web UI |
 | **Tavily API** | Web search and information retrieval |
 | **BeautifulSoup4** | HTML parsing and content extraction |
@@ -84,7 +84,7 @@ create env -- create tool -- create agent -- create pipeline -- run and test
 ## 📋 Prerequisites
 
 - Python 3.11 or higher
-- OpenAI API Key
+- GEMINI API Key
 - Tavily API Key
 
 ---
@@ -123,12 +123,12 @@ pip install -r requirements.txt
 Create a `.env` file in the project root:
 
 ```bash
-OPENAI_API_KEY=your_openai_api_key_here
+GEMINI_API_KEY=your_gemini_api_key_here
 TAVILY_API_KEY=your_tavily_api_key_here
 ```
 
 Get your keys from:
-- [OpenAI API](https://platform.openai.com/api-keys)
+- [GEMINI API](gemini api)
 - [Tavily API](https://tavily.com)
 
 ---
