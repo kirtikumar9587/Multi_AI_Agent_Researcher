@@ -19,6 +19,8 @@ A powerful multi-agent research system built with LangChain that autonomously re
 - **Pipeline Orchestration**: Seamless coordination of multiple agents
 
 ---
+create env -- create tool -- create agent -- create pipeline -- run and test
+----
 
 ## 🏗️ Architecture
 
@@ -60,7 +62,7 @@ A powerful multi-agent research system built with LangChain that autonomously re
 - **Reader Agent**: Extracts clean, readable content from URLs
 - **Writer Chain**: Composes structured, professional research reports
 - **Critic Chain**: Evaluates reports and provides improvement suggestions
-
+ 
 ---
 
 ## 🛠️ Technologies Used
