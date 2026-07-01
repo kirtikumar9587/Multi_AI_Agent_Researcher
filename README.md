@@ -124,6 +124,7 @@ Create a `.env` file in the project root:
 
 ```bash
 GEMINI_API_KEY=your_gemini_api_key_here
+# or: GOOGLE_API_KEY=your_google_api_key_here
 TAVILY_API_KEY=your_tavily_api_key_here
 ```
 

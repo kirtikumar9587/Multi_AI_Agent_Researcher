@@ -1,3 +1,5 @@
+import os
+
 from langchain.agents import create_agent
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import ChatPromptTemplate
@@ -8,7 +10,16 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Model Initialization
-llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0)
+llm_kwargs = {
+    "model": "gemini-2.5-flash",
+    "temperature": 0,
+}
+
+google_api_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
+if google_api_key:
+    llm_kwargs["google_api_key"] = google_api_key
+
+llm = ChatGoogleGenerativeAI(**llm_kwargs)
 
 
 # 1st Agent : Searc h Agent
